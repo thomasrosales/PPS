@@ -13,10 +13,10 @@
 
 . /lib/lsb/init-functions
 
-DAEMON=/usr/local/aeg/py_connect_aeg_v7.py
+DAEMON=/usr/local/***/py_connect_aeg_v8.py
 NOMBRE=aeg
-LOGFILE=/var/log/inverters/py_connect_aeg_v7.log
-ERRFILE=/var/log/inverters/py_connect_aeg_v7.err
+LOGFILE=/var/log/***/py_connect_aeg_v8.log
+ERRFILE=/var/log/***/py_connect_aeg_v8.err
 DESCRIPCION="Servicio de AEG"
 
 test -x $DAEMON || exit 0
