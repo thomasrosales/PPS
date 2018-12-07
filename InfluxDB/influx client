@@ -1,0 +1,2 @@
+sudo influx -host 'influxdb.linti.unlp.edu.ar' -username 'mfv'  -password 'mfv18!' -database 'mfv' -port '443' -ssl
+

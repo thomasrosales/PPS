@@ -1,0 +1,6 @@
+
+-> FTP probar. Cron.
+
+
+-> Alarmas  del GRAFANA.
+-> Agregar históricos faltantes. Última inserción 3/10/2018
