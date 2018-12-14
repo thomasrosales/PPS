@@ -31,8 +31,8 @@ class ftp_client():
     def __get_connection(self):
         if self.connection == None:
             ftp = FTP('')
-            ftp.connect('163.10.20.3') #default port
-            ftp.login('inversores','inversores2020')
+            ftp.connect('ip-server') #default port
+            ftp.login('user','password')
             ftp.set_pasv(False)
             self.connection = ftp      
         return self.connection
@@ -40,7 +40,7 @@ class ftp_client():
     def upload_file(self, filename):
         ftp = self.__get_connection()
         #ruta relativa del archivo pc cliente
-        filename = '/home/pi/inverter_data/configuration-sirio.cfg'
+        filename = '/home/.../file.txt'
         ftp.storbinary('STOR '+ filename, open(filename, 'rb'))
         ftp.quit()
 
@@ -83,7 +83,7 @@ class ftp_client():
 if __name__ == "__main__":
 
     cli = ftp_client()
-    path = "/home/pi/inverter_data"
+    path = "/home/pi/..."
     try:
         cli.upload_directory(path)
     except Exception as detail:

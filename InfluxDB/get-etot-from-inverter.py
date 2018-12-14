@@ -33,10 +33,10 @@ def get_total_energy_data_influx():
     '''
     try:
 
-        user = 'mfv'
-        password = 'mfv18!'
-        dbname = 'mfv'
-        host = 'influxdb.linti.unlp.edu.ar'
+        user = 'user'
+        password = 'password'
+        dbname = 'dbname'
+        host = '***'
         port = 443
         ssl = True
 
